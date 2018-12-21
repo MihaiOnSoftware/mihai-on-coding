@@ -433,9 +433,10 @@ One interesting way to do this is to set up an [on-boarding sprint](http://blog.
 ## Other Resources
 
 Here are some other great resources!
-http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html
-https://codeburst.io/pair-programming-for-introverts-dab230879c84
-https://tuple.app/
-http://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html
-https://ykode.id/software-engineering-wisdom-9fa1b27a826d
+
+* http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html
+* https://codeburst.io/pair-programming-for-introverts-dab230879c84
+* https://tuple.app/
+* http://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html
+* https://ykode.id/software-engineering-wisdom-9fa1b27a826d
 
