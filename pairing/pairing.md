@@ -11,10 +11,8 @@ Pair programming is a complex practice requiring skill to master. There are a lo
 *Problem*: The work the *pair* is doing, what is being solved or explored.
 
 *Pair* or :pear: : 
-
 * (noun) Either the two people pair programming, or the *pairing* partner of the current subject. E.g. "The *pair* can try alternating roles", "Try spending some time asking your *pair* about their day before you start working on the *problem*".
 * (verb) The act of pairing, e.g. "to pair or not to pair, that is the question"
-
 
 *Pairer*: A member of a pair
 
@@ -56,9 +54,31 @@ Aside from often making work more enjoyable (though it may take some practice an
 * Increases safety and trust
 * Increases confidence
 
-### Types of pairs
+### When?
 
-This is a somewhat shallow and brief breakdown, but it’s a good place to start. A more indepth view makes use of the [Dreyfus Squared](https://cdn-images-1.medium.com/max/1600/1*jOo1uFxJ492652tC3H78cw.png) model. More can be found on this [here](https://www.youtube.com/watch?v=lvs7VEsQzKY) and [here](https://ykode.id/software-engineering-wisdom-9fa1b27a826d).
+Whenever! Pairing doesn't need to be structured or planned, ad hoc *pair*ing works very effectively, especially if the *pairers* have done a few sessions together already. This isn't to say that *pair*ing should be done constantly or in every circumstance, it's an individual decision. While there are some companies that do full time *pair*ing all the time, that's not for everyone.
+
+It's important to keep in mind that *pair*ing is also quite tiring. While *pair*ing, the *pair* is always on the ball and focused, keeping that kind of long term focus can be exhausting. As such it's great to take some breaks, at least every 2 hours or so but whatever works. Additionally, just because one *pairer* is up to keep going, doesn't mean the other has to be.
+
+### *Pair*ing Misconceptions
+
+Here's a brief overview of some pairing misconceptions, a good resource is [Martin Fowler's blog post](https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.html) on the topic.
+
+#### Don't *pair* on rote code, only complex
+
+One of the things that *pair* programming is great at is identifying code smells and opportunities for abstraction. Rote code is often a good source of both of these so *pair*ing can be very effective here
+
+#### *Pair*ing is less productive
+
+As Fowler points out in his [blog post](https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.html), pairing is meant to help with the hardest parts of programming. The entire purpose is to be more productive.
+
+#### But I don't like *pair*ing
+
+Maybe that's true. Possibly it's just a matter of lack of familiarity. If you've tried pairing and found that it didn't work, try a different partner, this makes a huge difference. If you feel lost or it's still not working, try some of the techniques near the end of this doc.
+
+### Types of *pairs*
+
+This is a somewhat shallow and brief breakdown, but it’s a good place to start. A more in-depth view makes use of the [Dreyfus Squared](https://cdn-images-1.medium.com/max/1600/1*jOo1uFxJ492652tC3H78cw.png) model. More can be found on this in [Patterns of Effective Teams by Dan North](https://www.youtube.com/watch?v=lvs7VEsQzKY) and in this [Software Engineering Wisdom blog post](https://ykode.id/software-engineering-wisdom-9fa1b27a826d).
 
 #### *Expert*-*Expert*
 
@@ -439,4 +459,5 @@ Here are some other great resources!
 * https://tuple.app/
 * http://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html
 * https://ykode.id/software-engineering-wisdom-9fa1b27a826d
+* https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.htm
 
