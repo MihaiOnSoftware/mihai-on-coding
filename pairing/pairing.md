@@ -439,6 +439,18 @@ When one of the *pairers* moves forward too quickly, it's good for them to check
 * Step back and don't write code for a while, discuss what you'll be doing instead.
 * Don’t "just try this one thing" before explaining what you’re doing
 
+### Rubber Ducking
+
+Though not strictly speaking a pairing technique, in the absence of a second person to pair with this can provide a (very) small portion of the benefits of pairing. This is a solo exercise meant to help clarify thoughts. It's quite effective a sussing out hidden complexity in a given *solution* or alternate perspectives on a given *problem*.
+
+#### How?
+
+Take some inanimate object. In an ideal world this object is something the bobs gently on it's own like one of those solar powered flower toys or a rubber ducky floating in water, but anything that can be anthropomorphized works. Then explain, out loud, to the "rubber duck" what the *problem* is and what *solutions* present themselves. Hopefully through the process of explaining it in a way that a rubber duck would understand, something can be learned about either the *problem* or the *solutions*.
+
+#### This sounds dumb
+
+It does, but it can be surprisingly useful.
+
 ### On-boarding
 
 Not a technique for pairing so much as a way to use it, having pairing as part of your on-boarding process will help in many ways:
