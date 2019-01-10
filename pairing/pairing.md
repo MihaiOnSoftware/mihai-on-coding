@@ -1,4 +1,4 @@
-# Pair Programming
+# Pair programming explained
 
 ## TL;DR
 
