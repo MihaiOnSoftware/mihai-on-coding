@@ -1,16 +1,26 @@
 # Pair Programming
 
-## Basics
+## TL;DR
 
 Pair Programming is two people writing, debugging, or exploring code together. In essence it's simple, but getting the most out of your *pairing* *session* can take some work.
 
-Pair programming is a complex practice requiring skill to master. There are a lot of resources on pair programming but some teams drop engineers into a *pair* expecting them to figure it out.
+Pair programming is a complex practice requiring skill to master. There are a lot of resources on pair programming but sometimes engineers are dropped into a *pair* with little preparation are expected to just figure it out.
 
-### Terminology
+## Table of contents
+* [What, when, why, and who](#what-when-why-and-who)
+* [Roles](#roles)
+* [Addressing pitfalls](#addressing-pitfalls)
+* [*Pairing* *station*](#-pairing-station)
+* [Techniques](#techniques)
+* [Other resources](#other-resources)
+
+## What, when, why, and who
+
+### Terminology (What?)
 
 *Problem*: The work the *pair* is doing, what is being solved or explored.
 
-*Pair* or :pear: : 
+*Pair* or :pear:: 
 * (noun) Either the two people pair programming, or the *pairing* partner of the current subject. E.g. "The *pair* can try alternating roles", "Try spending some time asking your *pair* about their day before you start working on the *problem*".
 * (verb) The act of pairing, e.g. "to pair or not to pair, that is the question"
 
@@ -34,7 +44,13 @@ Pair programming is a complex practice requiring skill to master. There are a lo
 
 *Watch the master*: Where an *expert* does performance programming while the *novice* watches and doesn't take part. This often lowers the satisfaction for the *novice* as well as misses out on the key contributions from the *novice*. This can also lead to *disengagement*, break down the *pairers'* relationship, and doesn't lead to learning. Sometimes *watch the master* is a valid mentoring approach, however it is not *pairing*.
 
-### But Why?
+### When?
+
+Whenever! Pairing doesn't need to be structured or planned, ad hoc *pair*ing works very effectively, especially if the *pairers* have done a few sessions together already. This isn't to say that *pair*ing should be done constantly or in every circumstance, it's an individual decision. While there are some companies that do full time *pair*ing all the time, that's not for everyone.
+
+It's important to keep in mind that *pair*ing is also quite tiring. While *pair*ing, the *pair* is always on the ball and focused, keeping that kind of long term focus can be exhausting. As such it's great to take some breaks, at least every 2 hours or so but whatever works. Additionally, just because one *pairer* is up to keep going, doesn't mean the other has to be.
+
+### But why?
 
 It’s important to understand why we *pair* and what we’re hoping to accomplish. This section isn’t meant to be definitive and can vary subjectively, however these are some things that can be used as goals or possibly areas where your pairing might improve.
 
@@ -54,29 +70,7 @@ Aside from often making work more enjoyable (though it may take some practice an
 * Increases safety and trust
 * Increases confidence
 
-### When?
-
-Whenever! Pairing doesn't need to be structured or planned, ad hoc *pair*ing works very effectively, especially if the *pairers* have done a few sessions together already. This isn't to say that *pair*ing should be done constantly or in every circumstance, it's an individual decision. While there are some companies that do full time *pair*ing all the time, that's not for everyone.
-
-It's important to keep in mind that *pair*ing is also quite tiring. While *pair*ing, the *pair* is always on the ball and focused, keeping that kind of long term focus can be exhausting. As such it's great to take some breaks, at least every 2 hours or so but whatever works. Additionally, just because one *pairer* is up to keep going, doesn't mean the other has to be.
-
-### *Pair*ing Misconceptions
-
-Here's a brief overview of some pairing misconceptions, a good resource is [Martin Fowler's blog post](https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.html) on the topic.
-
-#### Don't *pair* on rote code, only complex
-
-One of the things that *pair* programming is great at is identifying code smells and opportunities for abstraction. Rote code is often a good source of both of these so *pair*ing can be very effective here
-
-#### *Pair*ing is less productive
-
-As Fowler points out in his [blog post](https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.html), pairing is meant to help with the hardest parts of programming. The entire purpose is to be more productive.
-
-#### But I don't like *pair*ing
-
-Maybe that's true. Possibly it's just a matter of lack of familiarity. If you've tried pairing and found that it didn't work, try a different partner, this makes a huge difference. If you feel lost or it's still not working, try some of the techniques near the end of this doc.
-
-### Types of *pairs*
+### Who?
 
 This is a somewhat shallow and brief breakdown, but it’s a good place to start. A more in-depth view makes use of the [Dreyfus Squared](https://cdn-images-1.medium.com/max/1600/1*jOo1uFxJ492652tC3H78cw.png) model. More can be found on this in [Patterns of Effective Teams by Dan North](https://www.youtube.com/watch?v=lvs7VEsQzKY) and in this [Software Engineering Wisdom blog post](https://ykode.id/software-engineering-wisdom-9fa1b27a826d).
 
@@ -132,26 +126,36 @@ Cons:
 * Can lead to the *pair* getting stuck and wasting time
 * Can be very frustrating if the *pair* gets stuck
 
-## Addressing Pitfalls
+## Roles
 
-The greatest pitfalls to pairing are:
+The two roles listed above, *driver* and *navigator* serve different purposes. It's often not clear who does what, keeping the guidelines here in mind can be helpful.
 
-* *Disengagement*
-* *Watch the master*
-* Communications breakdown
-* Conflict
+### *Driver*
 
-The first two can most often be resolved by [switching](#switching) the *driver* and *navigator* more often. Additionally by taking a more passive role in the *pair* and allowing the other *pairer* to take the lead. For some ways to facilitate this, take a look in the [Techniques](#Techniques) section, specifically [Ping-pong *Pairing*](#ping-pong-pairing) and [Pomodoro *Pairing*](#pomodoro-pairing).
+This is the clearest role, at least in part, because it's the person at the keyboard. The *driver* is responsible for the implementation. They keep their focus on what is happening right now and interpret what the *navigator* is saying. It's best if the *driver* doesn't focus too much on the broader design. Instead they should focus on making sure the work they are doing right now is high quality and doesn't contain errors. For example, while creating a new class as directed by the *navigator*, the *driver* would focus on:
 
-For communications breakdown, where the *pairers* aren’t able to understand one another or feel unheard, taking a break from typing and having a discussion can help. One thing to try here is [Digging for Gold](#digging-for-gold), this often works very well to get the *pair* through a tough spot.
+* extracting variables
+* extracting private methods
+* variable, method, and class names
+* other local refactoring and improvements.
+* method level logic
+* private methods
+* code style
+* running the tests
 
-Conflict between the two *pairers* does happen sometimes. Addressing this is tricky and this doc won’t go into detail, but there are a lot of techniques on conflict resolution that can be helpful. There are quite a few [resources](http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html) on pair programming specifically as well.
+### *Navigator*
 
-### Switching
+This role focuses on the broader scope of the *problem*. Generally the *navigator* will set the direction the code should go in. For example they might say something like "Maybe we can pull these shared methods into another class and pass it into the constructors". The *driver* will then take this and put it into code, modifying it to keep the code clean and error free. Along the way, the *navigator* is responsible for keeping the *pairing* on track and ensuring that rabbit holes are stepped out of in a reasonable time or that new approaches are tried as old ones fail to pan out. The *navigator* is also responsible to keeping an eye out for any errors, typos, or refactoring opportunities that crop up and the *driver* misses. Though this is not their primary role it's still important.
+
+### Dialogue
+
+It's important to note that the *driver* isn't just implementing what the *navigator* says, they are part of a dialogue. The idea here is that the *driver* brings in the "low level" perspective from the code that's in front of them and what will actually work here, the *navigator* brings in a more bird's eye view and tries to imagine how what is being written now will fit in with the greater design. By switching roles with some frequency, the *pair* can ensure that they have a good handle of both perspectives.
+
+### Switching roles
 
 Switching roles while *pairing* is essential to the process, it’s also one of the trickiest things to do correctly. The two roles have very different frames of reference, as such switching roles is a pretty big context switch when the roles are followed effectively. As such there needs to be some care involved.
 
-#### The Wrong Way
+#### The wrong way
 
 *Pairing* is about working together, as such anything that impedes one of the *pairers* from contributing or breaks their flow is harmful. Two of the more obvious ways to do this are to "grab the keyboard" or "push the keyboard".
 
@@ -161,13 +165,44 @@ Pushing the keyboard: Other times, the *driver* feels a strong need to direct th
 
 Finally even a consensual role switch can be jarring and confusing if done too quickly and without structure.
 
-### The Right Way
+#### The right way
 
 The first step to switching roles is always to ask. The *navigator* needs to ask if they can grab the keyboard before doing so. The *driver* needs to ask if the *navigator* is willing to drive before starting to direct them. Sometimes, switching without asking works out, but these situations are the exception and asking **always** helps.
 
 It's important to take some time when switching as well. Both *pairers* need to take some time acclimatizing to their new roles. This time can be reduced somewhat by having a structure around switching (e.g. [Ping-pong *Pairing*](#ping-pong-pairing)) as this allows the *pairers* to be mentally prepared for the switch to happen.
 
-## *Pairing* *Station*
+## Addressing pitfalls
+
+The greatest pitfalls to pairing are:
+
+* *Disengagement*
+* *Watch the master*
+* Communications breakdown
+* Conflict
+
+The first two can most often be resolved by [switching](#switching) the *driver* and *navigator* more often. Additionally by taking a more passive role in the *pair* and allowing the other *pairer* to take the lead. For some ways to facilitate this, take a look in the [Techniques](#Techniques) section, specifically [Ping-pong *pairing*](#ping-pong-pairing) and [Pomodoro *pairing*](#pomodoro-pairing).
+
+For communications breakdown, where the *pairers* aren’t able to understand one another or feel unheard, taking a break from typing and having a discussion can help. One thing to try here is [Digging for gold](#digging-for-gold), this often works very well to get the *pair* through a tough spot.
+
+Conflict between the two *pairers* does happen sometimes. Addressing this is tricky and this doc won’t go into detail, but there are a lot of techniques on conflict resolution that can be helpful. There are quite a few [resources](http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html) on pair programming specifically as well.
+
+### *Pair*ing misconceptions
+
+Here's a brief overview of some pairing misconceptions, a good resource is [Martin Fowler's blog post](https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.html) on the topic.
+
+#### Don't *pair* on rote code, only complex
+
+One of the things that *pair* programming is great at is identifying code smells and opportunities for abstraction. Rote code is often a good source of both of these so *pair*ing can be very effective here
+
+#### *Pair*ing is less productive
+
+As Fowler points out in his [blog post](https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.html), pairing is meant to help with the hardest parts of programming. The entire purpose is to be more productive.
+
+#### But I don't like *pair*ing
+
+Maybe that's true. Possibly it's just a matter of lack of familiarity. If you've tried pairing and found that it didn't work, try a different partner, this makes a huge difference. If you feel lost or it's still not working, try some of the techniques near the end of this doc.
+
+## *Pairing* *station*
 
 Before starting to *pair*, there should be a good space available that can facilitate and improve the *pairing* session.
 
@@ -182,7 +217,7 @@ The ideal *pairing* *station* should meet the following criteria:
 * Includes a whiteboard for discussion
 * In-person, though remote is possible if the environment can meet the above criteria.
 
-### Bad Stations are OK
+### Bad stations are OK
 
 Don’t let your environment be a barrier to pairing, if you can’t make/find a good space, ad-hoc over the shoulder pairing still works great! While having all of the criteria for the ideal *pairing* space is awesome, you’ll still get a lot of benefit even from pairing on a laptop at a table in the lunch area. However if you find that pairing isn’t working for you, try some of the suggestions below as the station can help alleviate a lot of problems.
 
@@ -198,7 +233,7 @@ For in person *pairs*, having two keyboards and two mice works very well when co
 
 For remote *pairs* using some sort of live code sharing can make it simpler to switch *drivers*.
 
-### Easy Driving
+### Easy driving
 
 This is the hardest part.
 
@@ -251,15 +286,15 @@ For remote *pairs*:
 
 * Both *pairers* need to be physically comfortable, can't have one (or both) member(s) in a cramped phone booth
 
-### Direct Communication
+### Direct communication
 
 The *pair* needs to be able to communicate directly, often verbally. If one or both of the *pairers* is a person with a disability that prevents verbal communication modify for other forms of communication. The goal is to be able to keep a constant dialogue going.
 
-#### I Don’t Like Talking
+#### I don’t like talking
 
 It can be intimidating to think that you’ll be having a constant dialogue with someone, but there are some things that make it easier to do while pairing. The first is the structure of pairing itself, the roles help smooth communication between individuals. When taking on a role there are guidelines on what to talk about and when. The second is trying some of the [techniques](#techniques) that are useful for pairing. These give you frameworks on when to switch roles, what kind of questions to ask, and even how to get over communication blockages.
 
-#### Language Barriers
+#### Language barriers
 
 Sometimes, the *pairers* don’t natively speak the same language. This is a pretty significant barrier to pairing and can cause some people to shy away from pairing. Whenever you feel that your pair hasn’t understood you, don’t just forge on ahead, spend the time clarifying what they’ve understood and defining things they don’t understand. Not only will this improve your pairing but it can help strength language skills in both *pairers*!
 
@@ -274,7 +309,7 @@ For remote *pairs*:
 * Both *pairers* need to be able to be loud enough to hear one another
 * Both *pairers* need to easily hear/see the other *pairer*
 
-### Indirect Communication
+### Indirect communication
 
 A large part of communication is not direct and triggered through subtle cues. If one or both of the *pairers* is visually impaired modify the recommendations for other indirect cues.
 
@@ -295,36 +330,11 @@ For in person *pairs*, an actual whiteboard or some paper works well.
 
 For remote *pairs*, a piece of paper with the camera trained on it, or even better some virtual whiteboard.
 
-## Roles
-
-The two roles listed above, *driver* and *navigator* serve different purposes. It's often not clear who does what, keeping the guidelines here in mind can be helpful.
-
-### *Driver*
-
-This is the clearest role, at least in part, because it's the person at the keyboard. The *driver* is responsible for the implementation. They keep their focus on what is happening right now and interpret what the *navigator* is saying. It's best if the *driver* doesn't focus too much on the broader design. Instead they should focus on making sure the work they are doing right now is high quality and doesn't contain errors. For example, while creating a new class as directed by the *navigator*, the *driver* would focus on:
-
-* extracting variables
-* extracting private methods
-* variable, method, and class names
-* other local refactoring and improvements.
-* method level logic
-* private methods
-* code style
-* running the tests
-
-### *Navigator*
-
-This role focuses on the broader scope of the *problem*. Generally the *navigator* will set the direction the code should go in. For example they might say something like "Maybe we can pull these shared methods into another class and pass it into the constructors". The *driver* will then take this and put it into code, modifying it to keep the code clean and error free. Along the way, the *navigator* is responsible for keeping the *pairing* on track and ensuring that rabbit holes are stepped out of in a reasonable time or that new approaches are tried as old ones fail to pan out. The *navigator* is also responsible to keeping an eye out for any errors, typos, or refactoring opportunities that crop up and the *driver* misses. Though this is not their primary role it's still important.
-
-### Dialogue
-
-It's important to note that the *driver* isn't just implementing what the *navigator* says, they are part of a dialogue. The idea here is that the *driver* brings in the "low level" perspective from the code that's in front of them and what will actually work here, the *navigator* brings in a more bird's eye view and tries to imagine how what is being written now will fit in with the greater design. By switching roles with some frequency, the *pair* can ensure that they have a good handle of both perspectives. 
-
 ## Techniques
 
 There are different techniques that a *pair* can try when *pairing* to improve the experience or learn something new. Some of these techniques can work in tandem, others are mutually exclusive. Picking a technique depends on who the members of the *pair* are and how they work together
 
-### Ping-pong *Pairing*
+### Ping-pong *pairing*
 
 This is a *pairing* technique derived from TDD's `red`→ `green`→`refactor` loop. It works best if one or both of the *pairers* are familiar with TDD but can also be a learning opportunity in the *novice*-*novice* style. This technique is also useful when two *experts* are *pairing* or when dealing with a particularly challenging *problem*. Finally, this is a great way to learn or improve TDD skills.
 
@@ -339,11 +349,11 @@ The steps to this technique:
 3. `Refactor` → **right** continues in the *driver*'s seat and refactors both the production and test code, **left** keeps the broader picture in mind and guides the refactor 
 4. The *pair* starts again but this time **right** is the *driver* and writes the test, they then switch so that **left** writes the implementation
 
-### Pomodoro *Pairing*
+### Pomodoro *pairing*
 
 This is a *pairing* technique based off of the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). This technique is helpful with resolving a *watch the master* situation or more generally in a *expert*-*novice* pair.
 
-#### Pomodoro Technique?
+#### Pomodoro technique?
 
 This is a quick breakdown of the pomodoro technique, not pomodoro *pairing*.
 
@@ -379,7 +389,7 @@ It's ok to sometimes switch roles within the pomodoro but each of the pairers sh
 
 After completing the *pairing* *session*, reflect on the number of distractions, what needs to improve?
 
-### [Strong Style](http://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html)
+### [Strong style](http://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html)
 
 `For an idea to go from your head into the computer it *must* go through someone else's hands`
 
@@ -387,7 +397,7 @@ After completing the *pairing* *session*, reflect on the number of distractions,
 In this technique, the *navigator* has some idea how they want the *solution* to look. The *driver* drives as described in [*roles*](#Roles). Any time the *driver* has an idea they want to try out, the roles switch.
 
 
-### Digging for Gold
+### Digging for gold
 
 Sometimes one of the *pairers* will have a hard time listening to the other. They might feel that the other *pairer*'s ideas don't have merit or are lacking expertise. In these cases it's useful for the *pairer* that's having trouble finding value in the *pair* to try digging for gold. This technique is also useful when the *pair* is stuck and can't find a way forward.
 
@@ -417,7 +427,7 @@ Spend some time reflecting on the *pairing* *session*.
 * “Is there anything that stood out to you during our pairing?”
 * Set a learning goal for next time, reflect on this *session*'s learning goals
 
-### Starting Your *Session*
+### Starting Your *session*
 
 Spend some time before *pairing* talking about things not related to the *problem* at hand. This can set the tone for the *session* and make everyone feel comfortable.
 
@@ -439,7 +449,7 @@ When one of the *pairers* moves forward too quickly, it's good for them to check
 * Step back and don't write code for a while, discuss what you'll be doing instead.
 * Don’t "just try this one thing" before explaining what you’re doing
 
-### Rubber Ducking
+### Rubber ducking
 
 Though not strictly speaking a pairing technique, in the absence of a second person to pair with this can provide a (very) small portion of the benefits of pairing. This is a solo exercise meant to help clarify thoughts. It's quite effective a sussing out hidden complexity in a given *solution* or alternate perspectives on a given *problem*.
 
@@ -462,7 +472,7 @@ Not a technique for pairing so much as a way to use it, having pairing as part o
 
 One interesting way to do this is to set up an [on-boarding sprint](http://blog.gdinwiddie.com/2013/03/27/adding-a-new-team-member/) for the on-boardee
 
-## Other Resources
+## Other resources
 
 Here are some other great resources!
 
