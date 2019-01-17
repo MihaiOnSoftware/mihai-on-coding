@@ -22,9 +22,9 @@ Pair programming is a complex practice requiring skill to master. There are a lo
 
 *Pair* or :pear:: 
 * (noun) Either the two people pair programming, or the *pairing* partner of the current subject. E.g. "The *pair* can try alternating roles", "Try spending some time asking your *pair* about their day before you start working on the *problem*".
-* (verb) The act of pairing, e.g. "to pair or not to pair, that is the question"
+* (verb) The act of pairing, for example "to pair or not to pair, that is the question".
 
-*Pairer*: A member of a pair
+*Pairer*: A member of a pair.
 
 *Session*: A stretch of time where two people are *pairing*. This ends when the *pair* splits up for anything more than a short break.
 
@@ -177,12 +177,12 @@ The greatest pitfalls to pairing are:
 
 * *Disengagement*
 * *Watch the master*
-* Communications breakdown
+* Communication breakdown
 * Conflict
 
 The first two can most often be resolved by [switching](#switching) the *driver* and *navigator* more often. Additionally by taking a more passive role in the *pair* and allowing the other *pairer* to take the lead. For some ways to facilitate this, take a look in the [Techniques](#Techniques) section, specifically [Ping-pong *pairing*](#ping-pong-pairing) and [Pomodoro *pairing*](#pomodoro-pairing).
 
-For communications breakdown, where the *pairers* aren’t able to understand one another or feel unheard, taking a break from typing and having a discussion can help. One thing to try here is [Digging for gold](#digging-for-gold), this often works very well to get the *pair* through a tough spot.
+For communication breakdown, where the *pairers* aren’t able to understand one another or feel unheard, taking a break from typing and having a discussion can help. One thing to try here is [Digging for gold](#digging-for-gold), this often works very well to get the *pair* through a tough spot.
 
 Conflict between the two *pairers* does happen sometimes. Addressing this is tricky and this doc won’t go into detail, but there are a lot of techniques on conflict resolution that can be helpful. There are quite a few [resources](http://sedano.org/toddsedano/2017/10/22/considerate-pair-programming.html) on pair programming specifically as well.
 
@@ -223,7 +223,7 @@ Don’t let your environment be a barrier to pairing, if you can’t make/find a
 
 ### Screens
 
-For in person *pairs*, having two monitors mirrored allows both *pairers* to see the work without looking over each other's shoulders.
+For in person *pairs*, having two monitors mirrored allows both *pairers* to see the work without looking over each other's shoulders. For Mac users, remember to bring that USB adapter!
 
 For remote *pairs*, either screen sharing or live code sharing can work effectively. While live code sharing helps with switching, it makes it difficult to track non-code work.
 
@@ -239,9 +239,9 @@ This is the hardest part.
 
 For in person *pairs*:
 
-* The keyboard(s) and mouse should be comfortable to use for both *pairers*. E.g.
-* If one member uses left handed mice, the mouse they are using should work for them
-* The keyboards should be in a layout that is familiar to the *pair* using it
+* The keyboard(s) and mouse should be comfortable to use for both *pairers*.
+	* If one member uses left handed mice, the mouse they are using should work for them
+	* The keyboards should be in a layout that is familiar to the *pair* using it
 * Shortcuts and productivity commands should be comfortable for both *pairers*
 	* The IDE plays a big part in this. E.g.
 		* RubyMine/Atom/VSCode shortcuts and plugins
@@ -336,7 +336,7 @@ There are different techniques that a *pair* can try when *pairing* to improve t
 
 ### Ping-pong *pairing*
 
-This is a *pairing* technique derived from TDD's `red`→ `green`→`refactor` loop. It works best if one or both of the *pairers* are familiar with TDD but can also be a learning opportunity in the *novice*-*novice* style. This technique is also useful when two *experts* are *pairing* or when dealing with a particularly challenging *problem*. Finally, this is a great way to learn or improve TDD skills.
+This is a *pairing* technique derived from Test Driven Development's (TDD) `red`→ `green`→`refactor` loop. It works best if one or both of the *pairers* are familiar with TDD but can also be a learning opportunity in the *novice*-*novice* style. This technique is also useful when two *experts* are *pairing* or when dealing with a particularly challenging *problem*. Finally, this is a great way to learn or improve TDD skills.
 
 #### How?
 
