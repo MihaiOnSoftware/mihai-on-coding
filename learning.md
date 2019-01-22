@@ -20,7 +20,7 @@ This goes together very well with [Clean Code](#clean-code-by-robert-c-martin). 
 
 ### Working Effectively with Legacy Code by Michael Feathers
 
-This book is great for learning how to create and exploit what Feathers' calls "seams". The reason these are useful is often we want to introduce some architectural change to the system, but it requires a massive refactor. Making use of this concept of "seams" allows one to introduce a change that gradually replaces the current system rather than having to do a big bang refactor.
+This book is great for learning how to create and exploit what Feathers calls "seams". The reason these are useful is often we want to introduce some architectural change to the system, but it requires a massive refactor. Making use of this concept of "seams" allows one to introduce a change that gradually replaces the current system rather than having to do a big bang refactor.
 
 ### Design Patterns: Elements of Reusable Object-Oriented Software by the gang of four
 
