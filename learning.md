@@ -1,4 +1,13 @@
 # Learning Software
+## Opportunities to learn
+
+Probably the most useful piece of advice I've ever gotten was to treat every piece of work I do as an opportunity to learn. What I mean here is to focus less on the outcome of the task and more on the process. For example, when I get a task that involves making a change for which there is already an existing pattern, instead of just following the pattern I try to think if the pattern can be improved. It might be a small thing that I'll actually do, it might be a larger thing that I might present as a potential future change, or just a mental exercise. Either way, the focus is seeing what I can learn, not how I can most quickly implement the task.
+
+### Deliberate Practise
+
+Sometimes, an opportunity comes along to do more then implicitly practise my craft. For example I might be doing a hack days project, or learning a new framework. In these cases, I take the opportunity to set specific learning goals. As an example, when I started learning React, I decided to try and learn Kent Beck's new [`Test->Commit->Revert`](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864) technique as well.
+
+If you can manage to even schedule time to do some really deliberate practise, where you take a toy problem and try to learn to use a new technique while solving it (and then throw away the resulting code), that's even better!
 
 ## Books
 
