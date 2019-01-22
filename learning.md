@@ -91,6 +91,6 @@ Here are some other things that I think are worthwhile reading/watching:
 * https://xprogramming.com/classics/expemergentdesign/
 * https://www.infoq.com/presentations/Simple-Made-Easy
 * https://www.gamedev.net/blogs/entry/2265481-oop-is-dead-long-live-oop/
-* http://www.ralin.net/blog/oop-anti-patterns-utility-or-helper-classes.html
+* http://ralin.io/blog/oop-anti-patterns-utility-or-helper-classes.html
 
 
