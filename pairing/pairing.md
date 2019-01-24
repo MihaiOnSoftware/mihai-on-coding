@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-Pair Programming is two people writing, debugging, or exploring code together. In essence it's simple, but getting the most out of your *pairing* *session* can take some work.
+Pair Programming is two people writing, debugging, or exploring code together. In essence, it's simple, but getting the most out of your *pairing* *session* can take some work.
 
 Pair programming is a complex practice requiring skill to master. There are a lot of resources on pair programming but sometimes engineers are dropped into a *pair* with little preparation are expected to just figure it out.
 
@@ -21,8 +21,8 @@ Pair programming is a complex practice requiring skill to master. There are a lo
 *Problem*: The work the *pair* is doing, what is being solved or explored.
 
 *Pair* or :pear:: 
-* (noun) Either the two people pair programming, or the *pairing* partner of the current subject. E.g. "The *pair* can try alternating roles", "Try spending some time asking your *pair* about their day before you start working on the *problem*".
-* (verb) The act of pairing, for example "to pair or not to pair, that is the question".
+* (noun) Either the two people pair programming or the *pairing* partner of the current subject. E.g. "The *pair* can try alternating roles", "Try spending some time asking your *pair* about their day before you start working on the *problem*".
+* (verb) The act of pairing, for example: "to pair or not to pair, that is the question".
 
 *Pairer*: A member of a pair.
 
@@ -32,15 +32,15 @@ Pair programming is a complex practice requiring skill to master. There are a lo
 
 *Navigator*: Sometimes called the *observer* (though this is inaccurate). This is the *pairer* that isn't currently *driving*. More details on this and the *driver* later. Generally, the *navigator* figures out the strategy, and guides the *driver* in implementing that strategy.
 
-*Development Environment*/*Station*: This is the environment in which the *pairing* is happening. Including: the desk, computer(s), keyboards, IDE. Anything that might make the *pairing* *session* better or worse outside of the *pair* itself.
+*Development Environment*/*Station*: This is the environment in which the *pairing* is happening. Including the desk, computer(s), keyboards, IDE. Anything that might make the *pairing* *session* better or worse outside of the *pair* itself.
 
-*Solution*: The approach currently taken to either resolve the *problem* or explore it.
+*Solution*: The approach currently being taken to either resolve the *problem* or explore it.
 
 *Expert*: The member of the *pair* that is relatively more experienced or knowledgeable. Especially in the particular *problem*. Not related to seniority and often isn't.
 
 *Novice*: The member of the *pair* that is relatively less experienced or knowledgeable. Especially in the particular *problem*. Not directly related to seniority and often isn't.
 
-*Disengagement*: When one member of the *pair* isn't focusing on the work being done or engaging in the *pairing*. This means that person is wasting their time. This is the biggest pitfall of *pairing*, as such it needs to be avoided or addressed.
+*Disengagement*: When one member of the *pair* isn't focusing on the work being done or engaging in the *pairing*. This means that *pairer* is wasting their time. This is the biggest pitfall of *pairing*, as such it needs to be avoided or addressed.
 
 *Watch the master*: Where an *expert* does performance programming while the *novice* watches and doesn't take part. This often lowers the satisfaction for the *novice* as well as misses out on the key contributions from the *novice*. This can also lead to *disengagement* and break down the *pairers'* relationship. Sometimes *watch the master* is a valid mentoring approach, but it is not *pairing*.
 
@@ -52,9 +52,9 @@ It's important to keep in mind that *pair*ing is also quite tiring. While *pair*
 
 ### But why?
 
-It’s important to understand why we *pair* and what we’re hoping to accomplish. This section isn’t definitive and can vary subjectively. Use these as  goals or areas where your pairing might improve.
+It’s important to understand why we *pair* and what we’re hoping to accomplish. This section isn’t definitive and can vary subjectively. Use these as goals or areas where your pairing might improve.
 
-Aside from often making work more enjoyable (though it may take some practice) there are some tangible benefits around the work itself. *Pairing* can:
+Aside from often making work more enjoyable (though it may take some practice), there are some tangible benefits around the work itself. *Pairing* can:
 
 * Remove knowledge silos to increase teams’ resiliency
 * Build collective code ownership
@@ -106,7 +106,7 @@ Cons: Can lead to a "*watch the master*" scenario.
 
 #### *Novice*-*Novice*
 
-This type of *pairing* involves a lot of learning and discovery. Often happens when exploring a new area or working on something unusual. This type of *pair* has a lot of benefits, but also the most potential downsides.
+This type of *pairing* involves a lot of learning and discovery. This often happens when exploring a new area or working on something unusual. This type of *pair* has a lot of benefits, but also the most potential downsides.
 
 Pros:
 
@@ -121,8 +121,8 @@ Pros:
 Cons:
 
 * Can lead to introducing and reinforcing bad practices
-	* These can be things that affect the final artifact directly (e.g. bad design) which can be mitigated by code reviews.
-	* Or things that affect the process of producing the artifact (e.g. big design up front) which are difficult to mitigate
+    * These can be things that affect the final artifact directly (e.g. bad design) which can be mitigated by code reviews.
+    * Or things that affect the process of producing the artifact (e.g. big design up front) which are difficult to mitigate
 * Can lead to the *pair* getting stuck and wasting time
 * Can be very frustrating if the *pair* gets stuck
 
@@ -132,7 +132,7 @@ The two roles listed above, *driver* and *navigator* serve different purposes. I
 
 ### *Driver*
 
-This is the clearest role, at least in part, because it's the person at the keyboard. The *driver* is responsible for the implementation. They keep their focus on what is happening right now and interpret what the *navigator* is saying. It's best if the *driver* doesn't focus too much on the broader design. Instead they should focus on making sure the work they are doing right now is high quality and error free. For example, while creating a new class as directed by the *navigator*, the *driver* would focus on:
+This is the clearest role, at least in part, because it's the person at the keyboard. The *driver* is responsible for the implementation. They keep their focus on what is happening right now and interpret what the *navigator* is saying. It's best if the *driver* doesn't focus too much on the broader design. Instead, they should focus on making sure the work they are doing right now is high quality and error-free. For example, while creating a new class as directed by the *navigator*, the *driver* would focus on:
 
 * extracting variables
 * extracting private methods
@@ -140,20 +140,20 @@ This is the clearest role, at least in part, because it's the person at the keyb
 * other local refactoring and improvements.
 * method level logic
 * private methods
-* code style
+* coding style
 * running the tests
 
 ### *Navigator*
 
-This role focuses on the broader scope of the *problem*. Generally the *navigator* will set the direction the code should go in. For example they might say something like "Maybe we can pull these shared methods into another class and pass it into the constructors". The *driver* will then take this and put it into code, modifying it to keep the code clean and error free. Along the way, the *navigator* is responsible for keeping the *pairing* on track. They ensure that rabbit holes are stepped out of in a reasonable time and new approaches are tried as old ones fail to pan out. The *navigator* is also keeps an eye out for any errors, typos, or refactoring opportunities that crop up and the *driver* misses. Though this is not their primary role it's still important.
+This role focuses on the broader scope of the *problem*. Generally, the *navigator* will set the direction the code should go in. For example, they might say something like "Maybe we can pull these shared methods into another class and pass it into the constructors". The *driver* will then take this and put it into the code, modifying it to keep the code clean and error free. Along the way, the *navigator* is responsible for keeping the *pairing* on track. They ensure that rabbit holes are stepped out of in a reasonable time and new approaches are tried as old ones fail to pan out. The *navigator* also keeps an eye out for any errors, typos, or refactoring opportunities that crop up and the *driver* misses. Though this is not their primary role it's still important.
 
 ### Dialogue
 
 It's important to note that the *driver* isn't just implementing what the *navigator* says, they are part of a dialogue. The idea here is that the *driver* brings in the "low level" perspective from the code that's in front of them and what will actually work here. Compared to the *navigator*, who brings in a more bird's eye view and tries to imagine how what is being written now will fit in with the greater design. By switching roles with some frequency, the *pair* can ensure that they have a good handle of both perspectives.
 
-### Switching roles
+### Switching Roles
 
-Switching roles while *pairing* is essential to the process, it’s also one of the trickiest things to do correctly. The two roles have very different frames of reference. Switching roles is a pretty big context switch when the roles are followed effectively. As such there needs to be some care involved.
+Switching roles while *pairing* is essential to the process, it’s also one of the trickiest things to do correctly. The two roles have very different frames of reference. Switching roles is a pretty big context switch when the roles are followed effectively. As such, there needs to be some care involved.
 
 #### The wrong way
 
@@ -163,13 +163,13 @@ Grabbing the keyboard: Sometimes when working as the *navigator* it's oh so temp
 
 Pushing the keyboard: Other times, the *driver* feels a strong need to direct the strategy. It's very tempting to just "push" the keyboard to the *navigator*, forcing them to take the *driver*'s seat, and start telling them what to do. This sudden context switch can be jarring and confusing to the unsuspecting *navigator*. It can lead to resentment and conflict as the *navigator* feels invalidated or ignored.
 
-Finally even a consensual role switch can be jarring and confusing if done too quickly and without structure.
+Finally, even a consensual role switch can be jarring and confusing if done too quickly and without structure.
 
 #### The right way
 
 The first step to switching roles is always to ask. The *navigator* needs to ask if they can grab the keyboard before doing so. The *driver* needs to ask if the *navigator* is willing to drive before starting to direct them. Sometimes, switching without asking works out. These situations are the exception and asking **always** helps.
 
-It's important to take some time when switching as well. Both *pairers* need to take some time acclimatizing to their new roles. This time can be reduced somewhat by having a structure around switching (e.g. [Ping-pong *Pairing*](#ping-pong-pairing)) . This allows the *pairers* to be mentally prepared for the switch to happen.
+It's important to take some time when switching as well. Both *pairers* need to take some time acclimatizing to their new roles. This time can be reduced somewhat by having a structure around switching (e.g. [Ping-pong *Pairing*](#ping-pong-pairing)). This allows the *pairers* to be mentally prepared for the switch to happen.
 
 ## Addressing pitfalls
 
@@ -218,17 +218,17 @@ The ideal *pairing* *station* should meet the following criteria:
 
 ### Bad stations are OK
 
-Don’t let your environment be a barrier to pairing, if you can’t make/find a good space, ad-hoc over the shoulder pairing still works great! While meeting this criteria for the ideal *pairing* space is awesome, you’ll still get a lot of benefit even from pairing on a laptop at a table in the lunch area. If you find that pairing isn’t working for you, try some of the suggestions below as the station can help with a lot of problems.
+Don’t let your environment be a barrier to pairing, if you can’t make/find a good space, ad-hoc over the shoulder pairing still works great! While meeting these criteria for the ideal *pairing* space is awesome, you’ll still get a lot of benefits even from pairing on a laptop at a table in the lunch area. If you find that pairing isn’t working for you, try some of the suggestions below as the station can help with a lot of problems.
 
 ### Screens
 
-For in person *pairs*, having two monitors mirrored allows both *pairers* to see the work without looking over each other's shoulders. For Mac users, remember to bring that USB adapter!
+For in-person *pairs*, having two monitors mirrored allows both *pairers* to see the work without looking over each other's shoulders. For Mac users, remember to bring that USB adapter!
 
 For remote *pairs*, either screen sharing or live code sharing can work effectively. While live code sharing helps with switching, it makes it difficult to track non-code work.
 
 ### Switching
 
-For in person *pairs*, having two keyboards and two mice works very well when combined with two mirrored monitors.
+For in-person *pairs*, having two keyboards and two mice works very well when combined with two mirrored monitors.
 
 For remote *pairs* using some sort of live code sharing can make it simpler to switch *drivers*.
 
@@ -236,28 +236,28 @@ For remote *pairs* using some sort of live code sharing can make it simpler to s
 
 This is the hardest part.
 
-For in person *pairs*:
+For in-person *pairs*:
 
 * The keyboard(s) and mouse should be comfortable to use for both *pairers*.
-	* If one member uses left handed mice, the mouse they are using should work for them
-	* The keyboards should be in a layout that is familiar to the *pair* using it
+    * If one member uses left-handed mice, the mouse they are using should work for them
+    * The keyboards should be in a layout that is familiar to the *pair* using it
 * Shortcuts and productivity commands should be comfortable for both *pairers*
-	* The IDE plays a big part in this. E.g.
-		* RubyMine/Atom/VSCode shortcuts and plugins
-		* Vim commands and plugins
-		* RubyMine/Atom/VSCode Vim integration can simplify switching when one member uses Vim and another uses an IDE
-		* The command lookup shortcut can help
-			* `CMD + SHIFT + A` for RubyMine
-	* The OS and apps installed can also play a part
-		* What type of shell
-		* SequelPro vs mysql
-		* Debugging tools
-		* Postman
-		* Browser
+    * The IDE plays a big part in this. E.g.
+        * RubyMine/Atom/VSCode shortcuts and plugins
+        * Vim commands and plugins
+        * RubyMine/Atom/VSCode Vim integration can simplify switching when one member uses Vim and another uses an IDE
+        * The command lookup shortcut can help
+            * `CMD + SHIFT + A` for RubyMine
+    * The OS and apps installed can also play a part
+        * What type of shell
+        * SequelPro vs MySQL
+        * Debugging tools
+        * Postman
+        * Browser
 
 #### IDEs
 
-These are a constant problem and can cause a lot of tension for the *pair*. The machine being used should **always** be able to accommodate the lowest common denominator. As an example, I’m not proficient in Emacs and only a little capable with Vim. If asked to pair on a machine with Emacs/Vim I would struggle to *drive*. Many modern IDEs like RubyMine, VSCode, Atom, etc. are much simpler to use and have a lower bar for entry. They also generally have Vim plugins, can quickly switch configurations, and have functionality lookups. It’s OK to switch IDEs when the driver switches, but less than ideal as switching is less fluid. Bottom line is: make sure the machine being *paired* on can support both *pairers*.
+These are a constant problem and can cause a lot of tension for the *pair*. The machine being used should **always** be able to accommodate the lowest common denominator. As an example, I’m not proficient in Emacs and only a little capable with Vim. If asked to pair on a machine with Emacs/Vim I would struggle to *drive*. Many modern IDEs like RubyMine, VSCode, Atom, etc. are much simpler to use and have a lower bar for entry. They also generally have Vim plugins, can quickly switch configurations, and have functionality lookups. It’s OK to switch IDEs when the driver switches, but less than ideal as switching is less fluid. The bottom line is: make sure the machine being *paired* on can support both *pairers*.
 
 Any time a *pairer* ends up driving out of necessity check that it isn't because of the environment.
 
@@ -271,14 +271,14 @@ For remote *pairs*:
 
 ### Physically comfortable
 
-The area both *pairers* are working in should be comfortable.
+The area both the *pairers* are working in should be comfortable.
 
-For in person *pairs*:
+For in-person *pairs*:
 
 * Both *pairers* should have the same amount of physical space, especially when driving
-	* [Curved corner desks](https://www.ikea.com/ca/en/catalog/products/S19282844/) can create a situation where one person is uncomfortably situated or has less space available to them.
+    * [Curved corner desks](https://www.ikea.com/ca/en/catalog/products/S19282844/) can create a situation where one person is uncomfortably situated or has less space available to them.
 * Both *pairers* should be able to sit comfortably while taking up either role
-	* A small desk that’s enough for one person is usually uncomfortable for two people to sit at
+    * A small desk that’s enough for one person is usually uncomfortable for two people to sit at
 * Take into account all the normal considerations for comfort in the workplace
 
 For remote *pairs*:
@@ -297,7 +297,7 @@ It can be intimidating to think that you’ll be having a constant dialogue with
 
 Sometimes, the *pairers* don’t natively speak the same language. This is a pretty significant barrier to pairing and can cause some people to shy away from pairing. Whenever you feel that your pair hasn’t understood you, don’t forge on ahead. Spend some time clarifying what they’ve understood and defining things they don’t understand. Not only will this improve your pairing but it can help strength language skills in both *pairers*!
 
-For in person *pairs*:
+For in-person *pairs*:
 
 * The *pairers* need to be able to hear each other
 * The work environment needs to allow for discussions and open communication, or the *pair* needs to have their own room
@@ -312,7 +312,7 @@ For remote *pairs*:
 
 A large part of communication is not direct and triggered through subtle cues. If one or both of the *pairers* is visually impaired modify the recommendations for other indirect cues.
 
-For in person *pairs*:
+For in-person *pairs*:
 
 Able to see each other well enough to pick up on visual cues
 
@@ -325,7 +325,7 @@ For remote *pairs*:
 
 Having a whiteboard or some paper to draw on can help facilitate discussion immensely.
 
-For in person *pairs*, an actual whiteboard or some paper works well.
+For in-person *pairs*, an actual whiteboard or some paper works well.
 
 For remote *pairs*, a piece of paper with the camera trained on it, or even better some virtual whiteboard.
 
@@ -350,7 +350,7 @@ The steps to this technique:
 
 ### Pomodoro *pairing*
 
-This is a *pairing* technique based off of the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). This technique is helpful with resolving a *watch the master* situation or more generally in a *expert*-*novice* pair.
+This is a *pairing* technique based off of the [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). This technique is helpful with resolving a *watch the master* situation or more generally in an *expert*-*novice* pair.
 
 #### Pomodoro technique?
 
@@ -401,7 +401,7 @@ Sometimes one of the *pairers* will have a hard time listening to the other. The
 
 #### How?
 
-One of the *pairers* makes a naive or impractical suggestion for moving forward. The *pair* then takes this idea and looks for divergent ideas that could help solve the *problem*. The *pair* explores this *solution*, and divergent *solutions*, until they've either found one that works or feel they've found all the gold there is.
+One of the *pairers* makes a naive or impractical suggestion for moving forward. The *pair* then takes this idea and looks for divergent ideas that could help solve the *problem*. The *pair* explores this *solution*, and divergent *solutions* until they've either found one that works or they feel they've found all the gold there is.
 
 #### Tips
 
@@ -453,7 +453,7 @@ Though not a pairing technique, in the absence of a second person to pair with t
 
 #### How?
 
-Take some inanimate object. In an ideal world this object is something the bobs gently on it's own like one of those solar powered flower toys or a rubber ducky floating in water, but anything that can be anthropomorphized works. Then explain, out loud, to the "rubber duck" what the *problem* is and what *solutions* present themselves. The process of explaining it in a way that a rubber duck would understand helps explore *problem* or the *solutions*.
+Take some inanimate object. In an ideal world this object is something the bobs gently on its own like one of those solar powered flower toys or a rubber ducky floating in water, but anything that can be anthropomorphized works. Then explain, out loud, to the "rubber duck" what the *problem* is and what *solutions* present themselves. The process of explaining it in a way that a rubber duck would understand helps explore *problem* or the *solutions*.
 
 #### This sounds dumb
 
@@ -461,7 +461,7 @@ It does, but it can be surprisingly useful.
 
 ### On-boarding
 
-Not a technique for pairing so much as a way to use it, having pairing as part of your on-boarding process will help in many ways:
+Not a technique for pairing so much as a way to use it, having pairing as part of your onboarding process will help in many ways:
 
 * The on-boardee will learn what's needed quickly
 * The *pair* will build a working relationship more quickly
@@ -479,4 +479,5 @@ Here are some other great resources!
 * https://tuple.app/
 * http://llewellynfalco.blogspot.com/2014/06/llewellyns-strong-style-pairing.html
 * https://ykode.id/software-engineering-wisdom-9fa1b27a826d
-* https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.htm
+* https://www.martinfowler.com/bliki/PairProgrammingMisconceptions.html
+
